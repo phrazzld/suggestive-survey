@@ -3,6 +3,7 @@
     <title>The Suggestive Survey</title>
     <link type='text/css' href='/index.css' rel='stylesheet'>
     <script type='text/javascript' href='/index.js'></script>
+    <script type='text/javascript' href='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
   </head>
   <body>
     <header>
@@ -11,19 +12,77 @@
     </header>
     <main>
     <form id='survey-form'>
-      <label for='name' id='name-label'>Name:</label>
-      <input type='text' name='name' id='name' placeholder='Anna Karenina' required>
-      <br>
-      <label for='email' id='email-label'>Email:</label>
-      <input type='email' name='email' id='email' placeholder='anna.karenina@gmail.com' required>
-      <br>
-      <label for='feeling' id='feeling-label'>How excellent is your day going?</label>
-      <input type='number' min='1' max='5' name='feeling' id='feeling' placeholder='3'>
-      <br>
-      <!-- dropdown input -->
-      <!-- radio button input -->
+      <div class='survey-form-field'>
+        <label for='name' id='name-label'>Name:</label>
+        <input type='text' name='name' id='name' placeholder='Anna Karenina' required>
+      </div>
+      <div class='survey-form-field'>
+        <label for='email' id='email-label'>Email:</label>
+        <input type='email' name='email' id='email' placeholder='akarenina@gmail.com' required>
+      </div>
+      <div class='survey-form-field'>
+        <label for='feeling' id='feeling-label'>How excellent is your day going?</label>
+        <input type='number' min='1' max='5' name='feeling' id='feeling' placeholder='3'>
+      </div>
+      <div class='survey-form-field'>
+        <label for='coolness' id='coolness-label'>How cool do you think I am?</label>
+        <select id='coolness' name='coolness'>
+          <option value='1'>Great</option>
+          <option value='2'>Good</option>
+          <option value='3'>Dece</option>
+          <option value='4'>Aight</option>
+          <option value='5'>Eh</option>
+        </select>
+      </div>
+      <!-- radio -->
+      <label for='animal' id='animal-label'>What animal are you?</label>
+      <div class='survey-form-field'>
+        <label for='lion' id='lion-label'>Lion</label>
+        <input type='radio' name='animal' id='lion' value='lion'>
+      </div>
+      <div class='survey-form-field'>
+        <label for='goat' id='goat-label'>Goat</label>
+        <input type='radio' name='animal' id='goat' value='goat'>
+      </div>
+      <div class='survey-form-field'>
+        <label for='alligator' id='alligator-label'>Alligator</label>
+        <input type='radio' name='animal' id='alligator' value='alligator'>
+      </div>
+      <div class='survey-form-field'>
+        <label for='frog' id='frog-label'>Frog</label>
+        <input type='radio' name='animal' id='frog' value='frog'>
+      </div>
+      <div class='survey-form-field'>
+        <label for='octopus' id='octopus-label'>Octopus</label>
+        <input type='radio' name='animal' id='octopus' value='octopus'>
+      </div>
+      <div class='survey-form-field'>
+        <label for='spider' id='spider-label'>Spider</label>
+        <input type='radio' name='animal' id='spider' value='spider'>
+      </div>
       <!-- checkboxes input -->
+      <label for='number' id='number-label'>What number are you?</label>
+      <div class='survey-form-field'>
+        <label for='one' id='number-one-label'>One</label>
+        <input type='checkbox' id='one' value='1'>
+      </div>
+      <div class='survey-form-field'>
+        <label for='two' id='number-two-label'>Two</label>
+        <input type='checkbox' id='two'>
+      </div>
+      <div class='survey-form-field'>
+        <label for='three' id='number-three-label'>Three</label>
+        <input type='checkbox' id='three'>
+      </div>
+      <div class='survey-form-field'>
+        <label for='four' id='number-four-label'>Four</label>
+        <input type='checkbox' id='four'>
+      </div>
       <!-- textarea input -->
+      <div class='survey-form-field'>
+        <label for='comments' id='comments-label'>Comments</label>
+        <input type='textarea' id='comments'>
+      </div>
       <input type='submit' id='submit' value='Submit'>
     </form>
     </main>
